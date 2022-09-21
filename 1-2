@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(void) 
+{
+	
+	int v;
+	int a;
+	int e;
+	
+	printf("輸入物體速度");
+	scanf("%d",&v);
+	
+	printf("輸入加速度");
+	scanf("%d",&a) ;
+	
+	printf("輸入經過時間");
+	scanf("%d",&e);
+	
+	int a1;
+	int a2;
+	
+	a1=v+a*e;
+	a2=v*e+1/2*a*e*e;
+	
+	printf("最後速度為%d",a1);
+	printf("移動距離為%d",a2);
+}
