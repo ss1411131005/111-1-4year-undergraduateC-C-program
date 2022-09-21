@@ -1,0 +1,21 @@
+//圖 2.4: fig02_04.c
+//用一個 printf 打印多行
+#include<stdio.h>
+
+//函數 main 開始執行程序
+int  main(void)
+{
+	int a1;
+	int a2;
+
+	printf("輸入一個數字");
+	scanf("%d", &a1);
+
+	printf("輸入第二個數字");
+	scanf("%d", &a2);
+	int sum;
+	sum = a1 + a2;
+
+	printf("總和%d\n讚啦", sum);
+
+} //結束函數 main
