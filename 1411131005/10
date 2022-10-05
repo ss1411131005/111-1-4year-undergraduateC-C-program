@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(void)
+{
+
+    int total = 0;
+    int counter = 0;
+
+    printf("enter grade, -1 to end");
+    int grade = 0;
+    scanf("%d", &grade);
+
+    while (grade !=-1)
+    {
+        total = total + grade;
+        counter = counter + 1;
+
+        printf("enter the next grade,-1 to end");
+        scanf("%d", &grade);
+    }
+
+    if (counter != 0)
+    {
+        double average = (double)total / counter;
+
+        printf("class average is %.2f\n", average);
+    }
+    else
+    {
+        puts("no grades were entered");
+    }
+}
